@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        height: 100%;
+        display: flex;
+    }
+    #container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #id1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #id2{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+    #id3{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+    #id12{
+        width: 25px;
+        height: 25px;
+        background-color: rgb(107, 158, 107);
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="id1">
+            <div id="id12">12</div>
+        </div>
+            
+        <div id="id2">1</div>
+        <div id="id3">1</div>
+    </div>
+</body>
+</html>

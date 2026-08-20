@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Weave - Loomé</title>
+    
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons for UI icons (Leaf, Cart, Menu, Stars, etc.) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">loomé.</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Shop</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-badge">2</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Layout -->
+        <main class="main-layout">
+            
+            <!-- Left Column: Typography and Product Details -->
+            <div class="left-column">
+                <div class="collection-badge">
+                    <i class="ri-leaf-line"></i> NEW COLLECTION
+                </div>
+                
+                <h1 class="hero-title">a cotton<br>weave</h1>
+                <div class="title-line"></div>
+                
+                <p class="hero-desc">
+                    Crafted from 100% organic cotton with a soft, breathable feel. Perfect for all seasons and everyday elegance.
+                </p>
+
+                <!-- Color Selection Swatches -->
+                <div class="color-selection">
+                    <span class="label">colors</span>
+                    <div class="swatches">
+                        <div class="swatch" style="background-color: #839171;"></div>
+                        <div class="swatch" style="background-color: #eee9dd;"></div>
+                        <div class="swatch" style="background-color: #e5b8b8;"></div>
+                    </div>
+                </div>
+
+                <!-- Product Details Paragraph -->
+                <div class="details-section">
+                    <h3 class="details-title">Details <span class="line"></span></h3>
+                    <p class="details-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sapiente. Ipsam maiores nemo, quidem veniam et atque suscipit, saepe doloribus ab molestiae deserunt? Totam natus eligendi neque.
+                    </p>
+                </div>
+
+                <!-- Features List (Organic, Soft, Handmade) -->
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="ri-leaf-line"></i></div>
+                        <div class="feature-text">Organic<br>Cotton</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="ri-drop-line"></i></div>
+                        <div class="feature-text">Soft &<br>Lightweight</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="ri-blaze-line"></i></div>
+                        <div class="feature-text">Handmade<br>Weave</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Absolute Positioned Rotated Text in the middle -->
+            <div class="rotated-text">
+                cotton twill scarf <div class="rotated-line"></div>
+            </div>
+
+            <!-- Right Column: Imagery and Call to Action -->
+            <div class="right-column">
+                
+                <!-- Hero Image Wrapper 
+                     This container uses `position: relative`. 
+                     It acts as an anchor for its absolute-positioned children (price tag, rating, button). 
+                -->
+                <div class="hero-image-wrapper">
+                    <!-- Main Hero Image -->
+                    <img src="./images/hero.png" alt="Model wearing a cotton weave scarf" class="hero-img">
+                    
+                    <!-- Floating UI elements demonstrating `position: absolute` -->
+                    <div class="price-tag">$488</div>
+                    
+                    <div class="rating-tag">
+                        Rating 
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <!-- The Add to Bag button extends outside its parent -->
+                    <button class="add-to-bag">
+                        <i class="ri-shopping-bag-line"></i>
+                        <span>Add to bag</span>
+                    </button>
+                </div>
+
+                <!-- Thumbnails container demonstrating `position: absolute` relative to the .right-column -->
+                <div class="thumbnails">
+                    <div class="thumbnail active">
+                        <img src="./images/hero.png" alt="Thumbnail 1">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="./images/blanket.jpg" alt="Thumbnail 2">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="./images/blanket.jpg" alt="Thumbnail 3">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="./images/blanket.jpg" alt="Thumbnail 4">
+                    </div>
+                </div>
+
+                <!-- Bottom Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="ri-shield-check-line"></i>
+                        <span>Secure<br>Payment</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="ri-truck-line"></i>
+                        <span>Free Shipping<br>Over $100</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="ri-refresh-line"></i>
+                        <span>Easy Returns<br>30 Days</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
